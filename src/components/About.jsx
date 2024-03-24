@@ -8,9 +8,9 @@ function About() {
             <h1 className='text-4xl inline border-b-4 border-gray-500'>About</h1>
             </div>
             
-            <p className='text-xl mt-20'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sit, eligendi voluptates expedita maxime hic inventore distinctio temporibus et atque. Pariatur quam ut id rerum provident quae magni quasi molestiae reiciendis cumque? Fuga, facere id. Expedita nam pariatur labore saepe ad sunt, quisquam voluptatibus, nemo, molestias esse quae rerum dicta.</p>
+            <p className='text-xl mt-20'>Thisshon Robert is a student and an aspiring web developer. He holds a degree at Electronics and Communication Engineering. His tech stack knowledge include MongoDB, Express, React, Node, Typescript, Tailwind, etc </p>
             <br></br>
-            <p className='text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, eveniet eius odio laborum nesciunt optio dolore, perferendis fugit qui illum nam excepturi hic quaerat ut eaque dolorem. Sit, necessitatibus a! Dolorem ea, magni ad tenetur minus, recusandae corrupti nam accusamus itaque laborum suscipit incidunt possimus, quae facere ratione hic voluptatibus?</p>
+            <p className='text-xl'>He aspires to contribute more to the tech industry by solving client's problems. He also studied and passed Japanese Language Proficiency Test N5.</p>
         </div>
     </div>
   )
