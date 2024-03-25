@@ -9,7 +9,7 @@ function Home() {
             <div className="flex flex-col justify-center h-full">
               <h2 className="text-4xl sm:text-7xl text-white font-bold ">I'm a Full Stack Developer</h2>
               <p className="py-4 mx-w-md text-gray-500">I like to work on web application using technologies like NodeJS,Express,React,
-              MongoDB,PostgreSQL,Prisma,tailwind,typescript</p>
+              MongoDB,PostgreSQL</p>
             <div>
             <button className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-yellow-500 to-purple-500 cursor-pointer">Portfolio
             <span className=" group-hover:rotate-90 duration-200"><FiArrowRightCircle className="ml-2" size={25}/></span></button>
