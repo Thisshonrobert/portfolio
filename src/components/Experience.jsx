@@ -68,14 +68,14 @@ let id=1;
     },
   ]
   return (
-    <div name="Experience" className='bg-gradient-to-b from-black via-black to-gray-800 w-full h-screen '>
+    <div name="Experience" className='bg-gradient-to-b from-black via-black to-gray-800  w-full md:h-screen '>
   <div className='flex flex-col text-white justify-center  mx-auto max-w-screen-lg p-4 w-full h-full'>
     <div className='mt-20'>
       <h1 className='border-b-4 border-gray-500 inline font-bold text-4xl p-2'>Experience</h1>
       <p className='text-xl py-4'>These are the technologies I've worked on</p>
     </div>
 
-    <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-4  px-10 sm:px-0'>
+    <div className='w-full grid grid-cols-2 md:grid-cols-3 gap-8 text-center py-4  px-10 sm:px-0'>
       {techno.map(({id,scr,style,title})=>(
         <div key={id} className={`shadow-md hover:scale-105 duration-200 rounded-lg ${style}`}>
           <img src={scr} alt={title} className='w-16 mx-auto'></img>
