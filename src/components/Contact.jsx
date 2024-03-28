@@ -16,8 +16,8 @@ function Contact() {
                 <input type='text' name="email" placeholder='enter your email' 
                 className='border-4 text-white rounded-md focus:outline-none bg-transparent p-2 mb-2'/>
                  <textarea rows='10' type='text' name="message" placeholder='type your message' 
-                className='border-4 text-white rounded-md focus:outline-none bg-transparent p-2 h-48 mb-2'/>
-                <button className='bg-gradient-to-r from-yellow-500 to-purple-500 px-6 py-2 my-2
+                className='border-4 text-white rounded-md focus:outline-none bg-transparent p-2 h-48 mb-1'/>
+                <button className='bg-gradient-to-r from-yellow-500 to-purple-500 px-6  py-1
                  mx-auto shadow-md rounded-lg shadow-purple-600 hover:scale-110 duration-300'>let's talk</button>
                 
               </form>
