@@ -8,8 +8,8 @@ function Home() {
  
   return (
     <div name="Home" className="bg-gradient-to-b from-black via-black to-gray-800 pl-10 sm:pl-0 w-full h-screen sm:h-screen sm:w-full">
-      <div className="max-w-screen-lg mx-auto flex flex-col md:flex-row items-center justify-center h-[126%] md:h-full px-4">
-        <div className="flex flex-col justify-center h-full ">
+      <div className="max-w-screen-lg mx-auto flex flex-col md:flex-row items-center justify-center h-[127%] md:h-full px-4">
+        <div className="flex flex-col  justify-center">
           <h2 className="text-4xl sm:text-7xl text-white font-bold">
           <TypeWriterEffect
             startDelay={100}
