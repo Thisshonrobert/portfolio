@@ -87,7 +87,7 @@ let id=1;
 
     <div className='w-full grid grid-cols-2 md:grid-cols-3 gap-8 text-center py-4  px-10 sm:px-0'>
       {techno.map(({id,scr,style,title,href})=>(
-        <a key={id} href={href} className={`shadow-md hover:scale-105 duration-200 rounded-lg ${style}`}>
+        <a key={id} href={href} target="_blank" className={`shadow-md hover:scale-105 duration-200 rounded-lg ${style}`}>
           <img src={scr}  alt={title} className='w-16 mx-auto'></img>
           <p className='mt-4'>{title}</p>
         </a>
