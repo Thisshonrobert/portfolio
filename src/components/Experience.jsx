@@ -16,55 +16,65 @@ let id=1;
       id:id++,
       scr:html,
       title:'HTML',
-      style:'shadow-orange-500'
+      style:'shadow-orange-500',
+      href:"https://www.w3schools.com/html"
     },
     {
       id:id++,
       scr:github,
       title:'GITHUB',
-      style:'shadow-gray-400'
+      style:'shadow-gray-400',
+      href:"https://docs.github.com/en"
     },
     {
       id:id++,
       scr:css,
       title:'CSS',
-      style:'shadow-cyan-500'
+      style:'shadow-cyan-500',
+      href:"https://www.w3schools.com/w3css/defaulT.asp"
+
     },
     {
       id:id++,
       scr:typescript,
       title:'TYPESCRIPT',
-      style:'shadow-blue-500'
+      style:'shadow-blue-500',
+      href:"https://www.typescriptlang.org/docs/"
     },
     {
       id:id++,
       scr:javascript,
       title:'JAVASCRIPT',
-      style:'shadow-yellow-500'
+      style:'shadow-yellow-500',
+      href:"https://devdocs.io/javascript/"
     },
     {
       id:id++,
       scr:prisma,
       title:'PRISMA',
-      style:'shadow-gray-600'
+      style:'shadow-gray-600',
+      href:"https://www.prisma.io/docs"
     },
     {
       id:id++,
       scr:node,
       title:'NODE',
-      style:'shadow-green-500'
+      style:'shadow-green-500',
+      href:"https://nodejs.org/docs/latest/api/"
     },
     {
       id:id++,
       scr:react,
       title:'REACT',
-      style:'shadow-blue-500'
+      style:'shadow-blue-500',
+      href:"https://react.dev/blog/2023/03/16/introducing-react-dev"
     },
     {
       id:id++,
       scr:tailwind,
       title:'TAILWIND',
-      style:'shadow-sky-500'
+      style:'shadow-sky-500',
+      href:"https://tailwindcss.com/docs/installation"
     },
   ]
   return (
@@ -76,11 +86,11 @@ let id=1;
     </div>
 
     <div className='w-full grid grid-cols-2 md:grid-cols-3 gap-8 text-center py-4  px-10 sm:px-0'>
-      {techno.map(({id,scr,style,title})=>(
-        <div key={id} className={`shadow-md hover:scale-105 duration-200 rounded-lg ${style}`}>
-          <img src={scr} alt={title} className='w-16 mx-auto'></img>
+      {techno.map(({id,scr,style,title,href})=>(
+        <a key={id} href={href} className={`shadow-md hover:scale-105 duration-200 rounded-lg ${style}`}>
+          <img src={scr}  alt={title} className='w-16 mx-auto'></img>
           <p className='mt-4'>{title}</p>
-        </div>
+        </a>
       ))}
     </div>
   </div>
