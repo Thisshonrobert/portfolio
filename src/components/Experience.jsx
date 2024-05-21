@@ -8,6 +8,11 @@ import prisma from '../assets/pris.webp'
 import node from '../assets/node.png'
 import react from '../assets/react.png'
 import tailwind from '../assets/tailwind.png'
+import docker from '../assets/docker.png'
+import nextjs from '../assets/nextjs.png'
+import turborepo from '../assets/turborepo.png'
+
+
 
 function Experience() {
 let id=1;
@@ -75,6 +80,27 @@ let id=1;
       title:'TAILWIND',
       style:'shadow-sky-500',
       href:"https://tailwindcss.com/docs/installation"
+    }, 
+    {
+      id:id++,
+      scr:docker,
+      title:'DOCKER',
+      style:'shadow-blue-500',
+      href:"https://www.docker.com/"
+    },
+    {
+      id:id++,
+      scr:nextjs,
+      title:'NEXT JS',
+      style:'shadow-gray-500',
+      href:"https://nextjs.org/"
+    },
+    {
+      id:id++,
+      scr:turborepo,
+      title:'TURBOREPO',
+      style:'shadow-red-500',
+      href:"https://turbo.build/"
     },
   ]
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import fitnessproject from "../assets/portfolio/fitnessproject.jpg"
+import express from "../assets/portfolio/express.png"
 import paytm from "../assets/portfolio/paytm.png"
 import portfolio from "../assets/portfolio/portfolio.png"
 
@@ -8,8 +8,8 @@ const Portfolio = () => {
     const portfolios = [
       {
         id: 1,
-        src: fitnessproject,
-        link:"https://github.com/Thisshonrobert/fitness-Project"
+        src: express,
+        link:"https://github.com/Thisshonrobert/blogging-website"
       },
       {
         id: 2,
@@ -47,7 +47,7 @@ const Portfolio = () => {
                   className="rounded-md duration-200 hover:scale-105"
                 />
                 <div className="flex items-center justify-center">
-                  <a href={link} target='_blank' rel='noreferrer' className="px-8 py-2 w-1/2 m-2 duration-200 hover:scale-105">
+                  <a href={link} target='_blank' rel='noreferrer' className="px-12 py-2 w-1/2 m-2 duration-200 hover:scale-105">
                     Code
                   </a>
                 </div>
