@@ -9,3 +9,6 @@
     font-family: 'Raleway', sans-serif;
   }
 }
+*{
+  @apply transition-colors duration-200
+}
