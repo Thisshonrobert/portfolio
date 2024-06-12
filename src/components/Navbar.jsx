@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
-    const [dark, setDark] = useState(localStorage.getItem("theme") === "true");
+    const [dark, setDark] = useState(localStorage.getItem("theme") === "false");
 
     useEffect(() => {
         localStorage.setItem("theme", dark);
