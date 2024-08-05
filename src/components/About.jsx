@@ -20,7 +20,7 @@ const TextRevealByWord = ({ text, className }) => {
       >
         <p
           className={
-            "flex flex-wrap text-2xl font-bold text-black/20 dark:text-white/20 md:p-4 md:text-4xl lg:p-5 lg:text-4xl xl:text-7xl"
+            "flex flex-wrap text-4xl font-bold text-black/20 dark:text-white/20 md:p-4 md:text-6xl lg:p-5 lg:text-6xl xl:text-7xl"
           }
         >
           {words.map((word, i) => {
@@ -55,8 +55,8 @@ const Word = ({ children, progress, range }) => {
 const About = () => {
   return (
     <div name="About" className="mx-auto w-full h-full bg-gradient-to-b from-blue-100 via-blue-200 to-blue-300 dark:from-gray-800 dark:via-black dark:to-black p-12">
-      <div className="container mx-auto max-w-screen-lg  py-10 px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl inline border-b-4 font-bold border-blue-500 dark:text-white dark:border-gray-500 mb-6">
+      <div className="container mx-auto  py-10 px-4 sm:px-6 lg:px-8">
+        <h1 className="text-4xl ml-8 lg:ml-24 inline border-b-4 font-bold border-blue-500 dark:text-white dark:border-gray-500 mb-6">
           About
         </h1>
         <TextRevealByWord className="lg:ml-32" text="I craft intuitive, responsive web experiences that seamlessly blend aesthetic design with functional elegance." />
