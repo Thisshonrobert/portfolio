@@ -102,9 +102,9 @@ function Experience() {
   ];
 
   return (
-    <div name="Experience" className='bg-gradient-to-b from-blue-300 via-blue-200 to-blue-100 dark:from-black dark:via-black dark:to-gray-800 w-full md:h-screen pt-24'>
+    <div name="Experience" className='bg-gradient-to-b from-blue-300 via-blue-200 to-blue-100 dark:from-black dark:via-black dark:to-gray-800 w-full h-full '>
       <div className='flex flex-col text-black dark:text-white justify-center mx-auto max-w-screen-lg p-4 w-full h-full'>
-        <div className='mt-20'>
+        <div className='mt-6'>
           <h1 className='border-b-4 border-blue-500 dark:border-gray-500 inline font-bold text-4xl p-2'>Experience</h1>
           <p className='text-xl py-4 text-gray-700 dark:text-gray-500'>These are the technologies I've worked on</p>
         </div>
@@ -118,6 +118,7 @@ function Experience() {
           ))}
         </div>
       </div>
+
     </div>
   );
 }

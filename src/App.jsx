@@ -1,11 +1,11 @@
 
-import Navbar from './components/Navbar'
-import Home from './components/Home'
-import SocialMediaLinks from './components/SocialMediaLinks'
-import About from './components/About'
-import Experience from './components/Experience'
-import Contact from './components/Contact'
-import Portfolio from './components/Portfolio'
+import Navbar from './component/Navbar'
+import Home from './component/Home'
+import SocialMediaLinks from './component/SocialMediaLinks'
+import About from './component/About'
+import Experience from './component/Experience'
+import Contact from './component/Contact'
+import Portfolio from './component/Portfolio'
 function App() {
  
 
