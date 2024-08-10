@@ -51,7 +51,7 @@ function SocialMediaLinks() {
         }
     ]
   return (
-    <div className='hidden lg:flex flex-col top-[35%] left-0 fixed'>
+    <div className='hidden lg:flex flex-col top-[35%] left-0 fixed z-50'>
       <ul>
         {links.map(({id,child,href,style,download})=>(
             <li key={id} className={`flex justify-between items-center w-32 h-12 px-4 ml-[-80px] hover:ml-[-10px] 
