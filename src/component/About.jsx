@@ -55,9 +55,9 @@ const About = () => {
   return (
     <div name="About" className="mx-auto w-full h-full bg-gradient-to-b from-gray-800 via-black to-black">
       <div className="container mx-auto py-1 px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl ml-8 lg:ml-24 inline border-b-4 font-bold border-gray-500 mb-2 text-white">
+        {/* <h1 className="text-4xl ml-8 lg:ml-24 inline border-b-4 font-bold border-gray-500 mb-2 text-white">
           About
-        </h1>
+        </h1> */}
         <TextRevealByWord className="lg:ml-32" text="I craft intuitive, responsive web experiences that seamlessly blend aesthetic design with functional elegance." />
       </div>
     </div>

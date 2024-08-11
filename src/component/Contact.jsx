@@ -24,7 +24,7 @@ function Contact() {
   };
 
   return (
-    <div name="Contact" className='bg-gradient-to-b from-black via-black to-gray-800 w-full h-screen'>
+    <div name="Contact" className='bg-gradient-to-b from-gray-800 via-black to-black w-full h-screen'>
       <div className='flex flex-col text-white justify-center mx-auto max-w-screen-lg p-4 w-full h-full'>
         <div className='pb-8 mt-20'>
           <h1 className='border-b-4 inline border-gray-500 font-bold text-4xl'>Contact</h1>

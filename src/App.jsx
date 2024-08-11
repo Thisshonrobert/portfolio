@@ -6,20 +6,25 @@ import About from './component/About'
 import Experience from './component/Experience'
 import Contact from './component/Contact'
 import Portfolio from './component/Portfolio'
+import Projects from './component/Projects'
+
 function App() {
  
 
   return (
     <div>
-    <Navbar/>
+    
      <Home/>
      <SocialMediaLinks/>
      <About/>
-     <Experience/>
-     <Portfolio/>
+    
+     <Projects/>
      <Contact/>
+     
     </div>
   )
 }
 
 export default App
+//<Portfolio/>
+{/* <Experience/> */}
