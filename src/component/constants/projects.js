@@ -1,22 +1,23 @@
 import BugTracker from "@/assets/portfolio/BugTracker.png";
 import express from "@/assets/portfolio/express.png";
 import FeedSpot from "@/assets/portfolio/FeedSpot.png";
-import paytm from "@/assets/portfolio/paytm.png";
+import Vpay from "@/assets/portfolio/Vpay.png";
 
 export const PROJECTS = [
   {
-    title: "Paytm",
-    description:
-      "A comprehensive payment and transaction management platform, Paytm clone, allows users to perform seamless transactions with enhanced security features. This project showcases a fully functional backend coupled with a responsive frontend, designed to handle high volumes of transactions efficiently. ",
-    img: paytm,
-    github: "https://github.com/Thisshonrobert/paytm",
-    technologies: ["Node.js", "MongoDB", "React.js", "Express.js"],
+    title: "Vpay",
+    description:"A modern payment and wallet app built with TurboRepo, featuring a Next.js user interface and an Express-based bank webhook. Styled with Tailwind CSS and ShadCN, the app supports peer-to-peer transactions and includes rate limiting for enhanced security",
+    img: Vpay,
+    github: "https://github.com/Thisshonrobert/VPay",
+    deployedLink: "http://vpay.uk.to/",
+    technologies: ["turbo repo", "Nextjs", "Prisma", "Express.js","shadcn"],
   },
   {
     title: "Bug Tracker",
     description:
       "An intuitive bug tracking system designed to streamline issue management for development teams. This project allows users to report, track, and resolve bugs with ease. The application includes features like issue categorization, priority assignment, and real-time updates, enabling teams to maintain smooth workflows. ",
     img: BugTracker,
+    github: "https://github.com/Thisshonrobert/IssueTracker",
     deployedLink: "https://issue-tracker-sable-xi.vercel.app",
     technologies: ["Next.js", "Postgres DB", "Prisma ORM", "Tailwind CSS", "Radix UI"],
   },
