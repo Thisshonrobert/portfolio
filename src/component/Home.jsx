@@ -45,7 +45,7 @@ export default function Home() {
         </div>
         <div className="md:w-1/2 flex justify-center items-center">
           <img 
-            src="/Heroimage.jpg" 
+            src="/Portfolio.jpg" 
             alt="Hero image of Thisshon Robert" 
             className="rounded-2xl w-2/3 md:w-full max-w-sm object-cover"
           />

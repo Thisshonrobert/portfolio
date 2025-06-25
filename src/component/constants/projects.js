@@ -1,6 +1,6 @@
 import BugTracker from "@/assets/portfolio/BugTracker.png";
 import express from "@/assets/portfolio/express.png";
-import FeedSpot from "@/assets/portfolio/FeedSpot.png";
+import Acethetics from "@/assets/portfolio/Acethetics.png";
 import Vpay from "@/assets/portfolio/Vpay.png";
 
 export const PROJECTS = [
@@ -30,11 +30,13 @@ export const PROJECTS = [
     technologies: ["Cloudflare - Hono", "React.js", "Prisma", "Postgres DB", "Tailwind CSS"],
   },
   {
-    title: "Feed Spot",
+    title: "Acethetics",
     description:
-      "Feed Spot is a social media platform designed to provide an engaging user experience with a focus on community interaction. The project includes features like user profiles, content feeds, and real-time notifications. Its visually appealing design and smooth user interface make it a standout project in the social media space.",
-    img: FeedSpot,
-    github: "https://github.com/krithiexplorer/feedspot",
-    technologies: ["Node.js", "Express", "React", "MongoDB", "Shadcn/ui", "Radix UI"],
+      `Developed a full-stack web application – Aesthetics – that showcases celebrity outfits with real-time try-on functionality using AI.
+Integrated virtual try-on API allowing users to upload their image and visualize clothing fit digitally.
+Monetized platform through affiliate marketing by linking each outfit to live purchase options via Amazon`,
+    img: Acethetics,
+    github: "https://github.com/Thisshonrobert/Ace.thetics",
+    technologies: ["NextJS", "React", "Prisma ORM", "Rapid API", "Imagekit-IO"],
   },
 ];
