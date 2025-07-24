@@ -10,7 +10,7 @@ export const PROJECTS = [
     img: Vpay,
     github: "https://github.com/Thisshonrobert/VPay",
     deployedLink: "http://vpay.uk.to/",
-    technologies: ["turbo repo", "Nextjs", "Prisma", "Express.js","shadcn"],
+    technologies: ["turbo Repo", "Nextjs", "OpenAPISpec", "AWS","CI/CD Pipeline" ,"ExpressJS"]
   },
   {
     title: "Bug Tracker",
