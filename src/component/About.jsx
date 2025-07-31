@@ -10,11 +10,12 @@ const TextRevealByWord = ({ text, className }) => {
     offset: ["start end", "end start"]
   });
   const words = text.split(" ");
-
+ 
   return (
     <div ref={targetRef} className={cn("relative z-0 min-h-screen py-20", className)}>
       <div className="sticky top-1/4 mx-auto flex max-w-4xl items-center bg-transparent px-4 sm:px-6 lg:px-8">
         <p className="flex flex-wrap text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white/20">
+          
           {words.map((word, i) => {
             const start = i / words.length;
             const end = start + 1 / words.length;

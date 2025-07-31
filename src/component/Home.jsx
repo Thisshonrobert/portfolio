@@ -3,7 +3,7 @@ import { FcBriefcase } from "react-icons/fc";
 import React from 'react';
 import { Link } from "react-scroll";
 import Typewriter from 'typewriter-effect';
-
+import { PointerHighlight } from "../components/ui/pointer-highlight";
 export default function Home() {
   return (
     <div name="Home" className="bg-gradient-to-b from-black via-black to-gray-800 w-full min-h-screen flex items-center justify-center px-4">
@@ -12,8 +12,11 @@ export default function Home() {
           <h2 className="text-xl sm:text-2xl pb-4 text-white font-semibold">I'm Thisshon Robert, and I Enjoy </h2>
 
           <h1 className="text-4xl sm:text-5xl text-white font-bold pb-4">
-            Building Pixel-Perfect <span className="bg-gradient-to-r from-purple-500 to-purple-300 text-transparent bg-clip-text">Interactive</span> apps
+            Building Pixel-Perfect
+            <PointerHighlight>
+             <span className="bg-gradient-to-r from-purple-500 to-purple-300 text-transparent bg-clip-text">Interactive</span> apps
             <FcBriefcase aria-label="briefcase icon" className="inline ml-2"/>
+            </PointerHighlight>
           </h1>
 
           <div className="text-white font-semibold pb-4">
