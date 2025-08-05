@@ -11,7 +11,7 @@ export function PointerHighlight({
 }) {
   const containerRef = useRef(null);
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
-
+  const [animKey, setAnimKey] = useState(0);
   useEffect(() => {
     if (containerRef.current) {
       const { width, height } = containerRef.current.getBoundingClientRect();
@@ -35,12 +35,19 @@ export function PointerHighlight({
       }
     };
   }, []);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setAnimKey((k) => k + 1);
+    }, 6000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     (<div className={cn("relative w-fit", containerClassName)} ref={containerRef}>
       {children}
       {dimensions.width > 0 && dimensions.height > 0 && (
         <motion.div
+        key={animKey}
           className="pointer-events-none absolute inset-0 z-0"
           initial={{ opacity: 0, scale: 0.95, originX: 0, originY: 0 }}
           animate={{ opacity: 1, scale: 1 }}

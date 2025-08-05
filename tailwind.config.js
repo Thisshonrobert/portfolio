@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-import defaultTheme from "tailwindcss/defaultTheme";
-import colors from "tailwindcss/colors";
+
 import flattenColorPalette from "tailwindcss/lib/util/flattenColorPalette";
 export default {
   content: [
@@ -66,7 +65,7 @@ export default {
   		]
   	}
   },
-  plugins: [addVariablesForColors, require("tailwindcss-animate")],
+  plugins: [addVariablesForColors, require("tailwindcss-animate"), require('tailwindcss-filters')],
   darkMode:["class", "class"]
 }
 function addVariablesForColors({ addBase, theme }) {

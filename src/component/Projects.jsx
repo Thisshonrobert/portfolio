@@ -25,9 +25,9 @@ const ProjectCard = ({ project }) => {
         y: 0,
       }}
       viewport={{ once: true }}
-      className="flex flex-col overflow-hidden rounded-md border p-4 shadow-lg h-full"
+      className="flex flex-col overflow-hidden rounded-md border p-4 shadow-lg h-full max-w-xl"
     >
-      <div className="h-48 mb-4">
+      <div className="h-32 mb-4">
         <img
           src={project.img}
           alt={project.title}
@@ -83,7 +83,7 @@ const ProjectCard = ({ project }) => {
 
 const Projects = () => {
   return (
-    <MaxWidthWrapper className="flex flex-col bg-gradient-to-b from-black via-black to-gray-800 py-20">
+    <MaxWidthWrapper  className="flex flex-col bg-gradient-to-b from-black via-black to-gray-800 py-4 px-2 md:pt-0 items-center-safe">
       <motion.h1
         initial={{ opacity: 0, y: 20 }}
         whileInView={{
@@ -108,7 +108,7 @@ const Projects = () => {
         I've worked on a variety of projects, from simple websites to
         complex web applications. Here are a few of my favorites.
       </motion.p>
-      <div name="Portfolio" className="grid grid-cols-1 gap-8 px-4 sm:grid-cols-2 lg:grid-cols-2">
+      <div name="Projects" className="grid grid-cols-1 gap-8 px-4 sm:grid-cols-2 lg:grid-cols-2 ">
         {PROJECTS.map((project) => (
           <ProjectCard key={project.title} project={project} />
         ))}
