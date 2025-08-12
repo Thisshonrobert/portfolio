@@ -62,7 +62,8 @@ export default {
   	fontFamily: {
   		signature: [
   			'Great Vibes'
-  		]
+  		],
+		  inconsolata: ['Inconsolata', 'monospace']
   	}
   },
   plugins: [addVariablesForColors, require("tailwindcss-animate"), require('tailwindcss-filters')],

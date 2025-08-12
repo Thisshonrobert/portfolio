@@ -30,12 +30,12 @@ const NavbarPage = () => {
         {id:4, name:  "Projects", link: "Projects" },
         { id:5,name:  "Contact", link: "Contact" }
     ];
-    const isHomeSection = window.location.hash === "" || window.location.hash === "#home";
+    const isHomeSection = window.location.hash === "" || window.location.hash === "#Home";
 
     return (
         <nav className="fixed w-full bg-inherit ">
         <Navbar  >
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation - Always visible */}
           <NavBody>
             <NavbarLogo />
             <NavItems items={links}  />
@@ -45,33 +45,35 @@ const NavbarPage = () => {
           </div>
           </NavBody>
    
-          {/* Mobile Navigation */}
-          <MobileNav>
-            <MobileNavHeader>
-              <NavbarLogo />
-              <MobileNavToggle
+          {/* Mobile Navigation - Only on home page */}
+          {isHomeSection && (
+            <MobileNav>
+              <MobileNavHeader>
+                <NavbarLogo />
+                <MobileNavToggle
+                  isOpen={isMobileMenuOpen}
+                  onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                />
+              </MobileNavHeader>
+     
+              <MobileNavMenu
                 isOpen={isMobileMenuOpen}
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              />
-            </MobileNavHeader>
-   
-            <MobileNavMenu
-              isOpen={isMobileMenuOpen}
-              onClose={() => setIsMobileMenuOpen(false)}
-            >
-              {links.map((item, idx) => (
-                <a
-                  key={`mobile-link-${idx}`}
-                  href={item.link}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="relative text-neutral-600 dark:text-neutral-300"
-                >
-                  
-                  <Link to={item.name} smooth duration={500}>{item.link}</Link>
-                </a>
-              ))}
-            </MobileNavMenu>
-          </MobileNav>
+                onClose={() => setIsMobileMenuOpen(false)}
+              >
+                {links.map((item, idx) => (
+                  <a
+                    key={`mobile-link-${idx}`}
+                    href={item.link}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="relative text-neutral-600 dark:text-neutral-300"
+                  >
+                    
+                    <Link to={item.name} smooth duration={500}>{item.link}</Link>
+                  </a>
+                ))}
+              </MobileNavMenu>
+            </MobileNav>
+          )}
         </Navbar>
         {/* Navbar */}
       </nav>
