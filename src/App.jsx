@@ -8,14 +8,15 @@ import About from './component/About'
 import Experience from './component/Experience'
 import Contact from './component/Contact'
 import Projects from './component/Projects'
-import WelcomeAnimation from './component/welcomeAnimation'
+// import WelcomeAnimation from './component/welcomeAnimation'
+import DynamicText from './components/kokonutui/dynamic-text'
 
 function App() {
 
 
   return (
     <div>
-      <WelcomeAnimation />
+      <DynamicText />
       <NavbarPage/>
       <Home/>
       <SocialMediaLinks/>

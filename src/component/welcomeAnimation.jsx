@@ -1,4 +1,4 @@
-// src/components/WelcomeAnimation.js
+
 
 import React, { useState, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
@@ -109,5 +109,6 @@ const WelcomeAnimation = ({ children }) => {
         </>
     );
 };
+
 
 export default WelcomeAnimation;
